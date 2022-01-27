@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('asset/PlayfairDisplay.ttf');
+}
+
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('asset/TimesNewRoman.ttf');
+}
+
+body {
+    margin: 100px 50px 150px 50px;
+    text-align: center;
+    background-image: url('asset/TriangleBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#titleArea {
+    margin: 70px auto;
+    position: relative;
+    font-family: 'PlayfairDisplay', serif;
+    font-size: 35px;
+    transform: scale(1.05, 1);
+    animation: slideToRight 1s;
+}
+
+@keyframes slideToRight {
+    0% {
+        left: -50px;
+        top: 0;
+        opacity: 0.5;
+    }
+    100% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+table {
+    width: fit-content;
+    height: max-content;
+    margin: auto;
+    position: relative;
+    table-layout: fixed;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+td {
+    width: 75px;
+    height: 30px;
+    position: relative;
+    padding-left: 15px;
+    text-align: left;
+    border: 1px solid lightgray;
+    border-right: 2px solid darkgray;
+
+    opacity: 0;
+    animation: fadeIn 1s linear;
+    animation-fill-mode: forwards;
+}
+
+td:hover {
+    background: beige;
+    cursor: pointer;
+}
+
+tr:nth-child(1) {
+    background: lightgray;
+    border-bottom: 2px solid darkgray;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
