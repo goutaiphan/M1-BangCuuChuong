@@ -19,6 +19,7 @@ body {
 
 #titleArea {
     margin: 70px auto;
+    text-align: center;
     position: relative;
     font-family: 'PlayfairDisplay', serif;
     font-size: 35px;
