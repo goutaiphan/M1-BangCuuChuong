@@ -55,12 +55,12 @@ td {
     border-left: 2px solid darkgray;
 }
 
-td:hover {
+td:hover:not(tr:first-child td) {
     background: beige;
     cursor: pointer;
 }
 
-tr:nth-child(1) {
+tr:first-child {
     background: lightgray;
     border-bottom: 2px solid darkgray;
 }
