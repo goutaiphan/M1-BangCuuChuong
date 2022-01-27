@@ -61,20 +61,19 @@ td:hover {
 }
 
 tr:nth-child(1) {
-    height: 30px;
     background: lightgray;
     border-bottom: 2px solid darkgray;
 }
 
 #reviewArea {
     width: 320px;
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     margin: auto;
     position: relative;
     text-align: center;
     font-family: 'TimesNewRoman', serif;
-    font-size: 27px;
+    font-size: 25px;
     border: 2px solid darkgray;
     background: lightgray;
 
