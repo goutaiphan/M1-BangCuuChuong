@@ -10,12 +10,14 @@
 <body>
 <p id="titleArea">Bảng cửu chương</p>
 <table id="table"></table>
+<p id="reviewArea">1 × 1 = 1</p>
 </body>
 </html>
 
 <script>
     let table = document.getElementById('table');
-    for (let i = 0; i < 10; i++) {
+    let reviewArea = document.getElementById('reviewArea');
+    for (let i = 0; i < 11; i++) {
         let tableRow = document.createElement('tr');
         table.appendChild(tableRow);
 
@@ -23,7 +25,12 @@
             let tableCell = document.createElement('td');
             tableRow.appendChild(tableCell);
             if (i === 0) tableCell.innerHTML = 'Chương ' + j;
-            else tableCell.innerHTML = j + ' × ' + i + ' = ' + j * i;
+            else {
+                tableCell.innerHTML = j + ' × ' + i + ' = ' + j * i;
+                tableCell.onmouseover = function (){
+                    reviewArea.innerHTML = tableCell.innerHTML;
+                }
+            }
         }
     }
 </script>
