@@ -16,7 +16,7 @@ table {
     table-layout: fixed;
     font-family: 'Times New Roman', serif;
     font-size: 17px;
-    border: 2px solid darkgray;
+    border: 2px solid gray;
     border-radius: 3px;
     border-spacing: 0;
 
@@ -36,7 +36,7 @@ td {
 }
 
 td:not(td:last-child) {
-    border-right: 2px solid darkgray;
+    border-right: 2px solid gray;
 }
 
 td:not(tr:last-child td, tr:first-child td) {
@@ -45,7 +45,7 @@ td:not(tr:last-child td, tr:first-child td) {
 
 tr:first-child td {
     background: lightgray;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 2px solid gray;
 }
 
 td:hover:not(tr:first-child td) {
@@ -62,7 +62,7 @@ td:hover:not(tr:first-child td) {
     text-align: center;
     font-family: 'TimesNewRoman', serif;
     font-size: 25px;
-    border: 2px solid darkgray;
+    border: 2px solid gray;
     border-radius: 3px;
     background: lightgray;
 
