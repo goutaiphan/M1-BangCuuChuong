@@ -51,6 +51,7 @@ tr:first-child td {
 td:hover:not(tr:first-child td) {
     background: beige;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #reviewArea {
