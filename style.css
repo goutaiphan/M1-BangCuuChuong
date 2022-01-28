@@ -1,5 +1,5 @@
 #titleArea {
-    margin: 70px auto;
+    margin: auto;
     text-align: center;
     position: relative;
     font-family: 'PlayfairDisplay', serif;
@@ -11,14 +11,14 @@
 table {
     width: fit-content;
     height: max-content;
-    margin: 60px auto;
+    margin: 70px auto;
     position: relative;
     table-layout: fixed;
     font-family: 'Times New Roman', serif;
     font-size: 17px;
     border: 2px solid darkgray;
-    border-left: none;
-    border-collapse: collapse;
+    border-radius: 3px;
+    border-spacing: 0;
 
     opacity: 0;
     animation: fadeIn 1.25s linear;
@@ -32,18 +32,25 @@ td {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    border: 1px solid lightgray;
-    border-left: 2px solid darkgray;
+    border: none;
+}
+
+td:not(td:last-child) {
+    border-right: 2px solid darkgray;
+}
+
+td:not(tr:last-child td, tr:first-child td) {
+    border-bottom: 1px solid lightgray;
+}
+
+tr:first-child td {
+    background: lightgray;
+    border-bottom: 2px solid darkgray;
 }
 
 td:hover:not(tr:first-child td) {
     background: beige;
     cursor: pointer;
-}
-
-tr:first-child {
-    background: lightgray;
-    border-bottom: 2px solid darkgray;
 }
 
 #reviewArea {
@@ -56,6 +63,7 @@ tr:first-child {
     font-family: 'TimesNewRoman', serif;
     font-size: 25px;
     border: 2px solid darkgray;
+    border-radius: 3px;
     background: lightgray;
 
     opacity: 0;
