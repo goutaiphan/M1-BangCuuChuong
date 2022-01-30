@@ -9,8 +9,7 @@
 }
 
 table {
-    width: fit-content;
-    height: max-content;
+    width: max-content;
     margin: 70px auto;
     position: relative;
     table-layout: fixed;
