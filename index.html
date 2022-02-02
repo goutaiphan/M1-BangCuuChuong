@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bảng cửu chương</title>
     <link href="style.css" rel="stylesheet">
     <link href="baseStyle.css" rel="stylesheet">
 </head>
 <body>
 <p id="titleArea">Bảng cửu chương</p>
-<table id="table"></table>
+<div id="tableArea">
+    <table id="table"></table>
+</div>
 <p id="reviewArea">1 × 1 = 1</p>
 </body>
 </html>
@@ -27,7 +29,7 @@
             if (i === 0) tableCell.innerHTML = 'Chương ' + j;
             else {
                 tableCell.innerHTML = j + ' × ' + i + ' = ' + j * i;
-                tableCell.onmouseover = function (){
+                tableCell.onmouseover = function () {
                     reviewArea.innerHTML = tableCell.innerHTML;
                 }
             }

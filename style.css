@@ -1,5 +1,5 @@
 #titleArea {
-    margin: auto;
+    margin: auto auto 70px;
     text-align: center;
     position: relative;
     font-family: 'PlayfairDisplay', serif;
@@ -8,14 +8,22 @@
     animation: slideToRight 1s;
 }
 
+#tableArea{
+    min-width: 200px;
+    max-width: max-content;
+    margin: auto;
+    overflow-x: auto;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+}
+
 table {
     width: max-content;
-    margin: 70px auto;
+    margin: auto;
     position: relative;
     table-layout: fixed;
     font-family: 'Times New Roman', serif;
     font-size: 17px;
-    border: 2px solid darkgray;
     border-radius: 3px;
     border-spacing: 0;
 
@@ -57,7 +65,7 @@ td:hover:not(tr:first-child td) {
     width: 320px;
     height: 50px;
     line-height: 50px;
-    margin: auto;
+    margin: 70px auto auto;
     position: relative;
     text-align: center;
     font-family: 'TimesNewRoman', serif;
