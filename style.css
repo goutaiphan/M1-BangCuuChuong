@@ -8,7 +8,7 @@
     animation: slideToRight 1s;
 }
 
-#tableArea{
+#tableArea {
     min-width: 200px;
     max-width: max-content;
     margin: auto;
@@ -62,7 +62,7 @@ td:hover:not(tr:first-child td) {
 }
 
 #reviewArea {
-    width: 320px;
+    max-width: 320px;
     height: 50px;
     line-height: 50px;
     margin: 70px auto auto;
