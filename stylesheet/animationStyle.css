@@ -1,4 +1,16 @@
+#titleArea {
+    animation: slideToRight 1s linear;
+}
 
+#tableArea {
+    animation: fadeIn 1.25s linear;
+    animation-fill-mode: forwards;
+}
+
+#reviewArea {
+    animation: slideToLeft 0.75s linear;
+    animation-fill-mode: both;
+}
 
 @keyframes fadeIn {
     0% {
@@ -8,7 +20,6 @@
         opacity: 1;
     }
 }
-
 
 @keyframes slideToRight {
     0% {
