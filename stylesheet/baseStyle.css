@@ -1,0 +1,115 @@
+@media screen and (hover: none) and (pointer: coarse) {
+    body {
+        width: 95%;
+    }
+
+    #titleArea {
+        font-size: 32px;
+    }
+
+    #tableArea {
+        width: 90%;
+        overflow: scroll;
+    }
+
+    #reviewArea {
+        width: 90%;
+    }
+}
+
+@media screen and (hover: hover) and (pointer: fine),
+(hover: none) and (pointer: coarse) and (min-width: 500px) {
+    body {
+        width: max-content;
+    }
+
+    #titleArea {
+        font-size: 34px;
+    }
+
+    #titleArea {
+        width: max-content;
+    }
+
+    #reviewArea {
+        width: 304px;
+    }
+}
+
+* {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 100px auto 150px;
+    text-align: center;
+    background-image: url('../media/TriangleBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#titleArea {
+    margin: auto auto 70px;
+    text-align: center;
+    font-family: 'PlayfairDisplay', serif;
+    transform: scale(1.05, 1);
+}
+
+#tableArea {
+    margin: auto auto 70px;
+}
+
+table {
+    width: max-content;
+    table-layout: fixed;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    border-spacing: 0;
+}
+
+td {
+    width: max-content;
+    height: 37px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'TimesNewRoman', serif;
+    font-size: 17px;
+}
+
+td:not(td:last-child) {
+    border-right: 2px solid darkgray;
+}
+
+td:not(tr:last-child td, tr:first-child td) {
+    border-bottom: 1px solid darkgray;
+}
+
+tr:first-child td {
+    background: lightgray;
+    border-bottom: 2px solid darkgray;
+}
+
+td:hover:not(tr:first-child td) {
+    background: beige;
+    cursor: pointer;
+}
+
+#reviewArea {
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    font-family: 'TimesNewRoman', serif;
+    font-size: 25px;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    background: lightgray;
+}

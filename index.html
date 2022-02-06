@@ -2,35 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng cửu chương</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="baseStyle.css" rel="stylesheet">
+
+    <link href="stylesheet/baseStyle.css" rel="stylesheet">
+    <link href="stylesheet/fontStyle.css" rel="stylesheet">
+    <link href="stylesheet/animationStyle.css" rel="stylesheet">
 </head>
 <body>
 <p id="titleArea">Bảng cửu chương</p>
-<div id="tableArea">
-    <table id="table"></table>
-</div>
+<div id="tableArea"></div>
 <p id="reviewArea">1 × 1 = 1</p>
 </body>
 </html>
 
 <script>
-    let table = document.getElementById('table');
+    let tableArea = document.getElementById('tableArea');
+    let table = document.createElement('table');
     let reviewArea = document.getElementById('reviewArea');
+    tableArea.appendChild(table);
+
     for (let i = 0; i < 11; i++) {
-        let tableRow = document.createElement('tr');
-        table.appendChild(tableRow);
+        let row = document.createElement('tr');
+        table.appendChild(row);
 
         for (let j = 1; j < 10; j++) {
-            let tableCell = document.createElement('td');
-            tableRow.appendChild(tableCell);
-            if (i === 0) tableCell.innerHTML = 'Chương ' + j;
+            let cell = document.createElement('td');
+            row.appendChild(cell);
+
+            if (i === 0) cell.innerHTML = 'Chương ' + j;
             else {
-                tableCell.innerHTML = j + ' × ' + i + ' = ' + j * i;
-                tableCell.onmouseover = function () {
-                    reviewArea.innerHTML = tableCell.innerHTML;
+                cell.innerHTML = j + ' × ' + i + ' = ' + j * i;
+                cell.onmouseover = function () {
+                    reviewArea.innerHTML = cell.innerHTML;
                 }
             }
         }

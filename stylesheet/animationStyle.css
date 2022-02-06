@@ -1,0 +1,52 @@
+#titleArea {
+    animation: slideToRight 1s linear;
+}
+
+table {
+    opacity: 0;
+    animation: fadeIn 1.25s linear;
+    animation-fill-mode: forwards;
+}
+
+#reviewArea {
+    opacity: 0;
+    animation: slideToLeft 0.75s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideToRight {
+    0% {
+        left: -50px;
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideToLeft {
+    0% {
+        left: 50px;
+        top: 0;
+        opacity: 0;
+
+    }
+    100% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+}
