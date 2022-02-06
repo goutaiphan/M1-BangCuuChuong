@@ -49,6 +49,22 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+#titleArea {
+    animation: slideToRight 1s linear;
+}
+
+#tableArea {
+    opacity: 0;
+    animation: fadeIn 1.25s linear;
+    animation-fill-mode: forwards;
+}
+
+#reviewArea {
+    opacity: 0;
+    animation: slideToLeft 0.75s linear;
+    animation-fill-mode: both;
+}
+
 body {
     margin: 100px auto 150px;
     text-align: center;
@@ -83,6 +99,10 @@ td {
     padding-right: 10px;
     font-family: 'TimesNewRoman', serif;
     font-size: 16px;
+}
+
+tr:first-child{
+    background: red;
 }
 
 td:not(td:last-child) {
