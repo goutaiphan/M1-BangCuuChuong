@@ -108,7 +108,7 @@ td:hover:not(tr:first-child td) {
     margin: auto;
     line-height: 50px;
     font-family: 'TimesNewRoman', serif;
-    font-size: 25px;
+    font-size: 24px;
     border: 2px solid darkgray;
     border-radius: 3px;
     background: lightgray;
