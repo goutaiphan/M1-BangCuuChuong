@@ -101,10 +101,6 @@ td {
     font-size: 16px;
 }
 
-tr:first-child{
-    background: red;
-}
-
 td:not(td:last-child) {
     border-right: 2px solid darkgray;
 }
