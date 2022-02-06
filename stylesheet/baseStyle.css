@@ -9,6 +9,7 @@
 
     #tableArea {
         width: 90%;
+        margin: auto auto 70px;
         overflow: scroll;
     }
 
@@ -29,6 +30,7 @@
 
     #tableArea {
         width: max-content;
+        margin: auto 25px 70px 50px;
     }
 
     #reviewArea {
@@ -64,13 +66,8 @@ body {
     transform: scale(1.05, 1);
 }
 
-#tableArea {
-    margin: auto auto 70px;
-}
-
 table {
     width: max-content;
-    margin: auto 25px auto 50px;
     border: 2px solid darkgray;
     border-radius: 3px;
     border-spacing: 0;
