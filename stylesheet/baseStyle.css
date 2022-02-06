@@ -70,7 +70,7 @@ body {
 
 table {
     width: max-content;
-    table-layout: fixed;
+    margin: auto 25px auto 50px;
     border: 2px solid darkgray;
     border-radius: 3px;
     border-spacing: 0;
