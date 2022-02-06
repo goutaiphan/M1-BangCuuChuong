@@ -9,7 +9,6 @@
 
     #tableArea {
         width: 90%;
-        margin: auto auto 70px;
         overflow: scroll;
     }
 
@@ -22,6 +21,7 @@
 (hover: none) and (pointer: coarse) and (min-width: 500px) {
     body {
         width: max-content;
+        padding: 0 50px 0 50px;
     }
 
     #titleArea {
@@ -30,7 +30,6 @@
 
     #tableArea {
         width: max-content;
-        margin: auto 25px 70px 50px;
     }
 
     #reviewArea {
@@ -64,6 +63,10 @@ body {
     text-align: center;
     font-family: 'PlayfairDisplay', serif;
     transform: scale(1.05, 1);
+}
+
+#tableArea {
+    margin: auto auto 70px;
 }
 
 table {
