@@ -1,33 +1,31 @@
 #titleArea {
-    animation: slideToRight 0.8s linear;
+    animation: slideToRight 0.8s linear forwards;
 }
 
 #tableArea {
-    animation: fadeIn 1.25s linear;
-    animation-fill-mode: forwards;
+    animation: fadeIn 1.25s linear forwards;
 }
 
 #reviewArea {
-    animation: slideToLeft 0.75s linear;
-    animation-fill-mode: both;
+    animation: slideToLeft 0.75s linear forwards;
 }
 
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }
 
 @keyframes slideToRight {
-    0% {
+    from {
         left: -50px;
         top: 0;
         opacity: 0;
     }
-    100% {
+    to {
         left: 0;
         top: 0;
         opacity: 1;
@@ -35,13 +33,13 @@
 }
 
 @keyframes slideToLeft {
-    0% {
+    from {
         left: 50px;
         top: 0;
         opacity: 0;
 
     }
-    100% {
+    to {
         left: 0;
         top: 0;
         opacity: 1;
