@@ -1,13 +1,11 @@
-#titleArea {
-    animation: slideToRight 0.8s linear forwards;
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../font/PlayfairDisplay.ttf');
 }
 
-#tableArea {
-    animation: fadeIn 1.25s linear forwards;
-}
-
-#reviewArea {
-    animation: slideToLeft 0.75s linear forwards;
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('../font/TimesNewRoman.ttf');
 }
 
 @keyframes fadeIn {

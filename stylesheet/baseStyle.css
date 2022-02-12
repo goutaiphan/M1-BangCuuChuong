@@ -115,3 +115,15 @@ td:hover:not(tr:first-child td) {
     border-radius: 3px;
     background: lightgray;
 }
+
+#titleArea {
+    animation: slideToRight 0.8s linear forwards;
+}
+
+#tableArea {
+    animation: fadeIn 1.25s linear forwards;
+}
+
+#reviewArea {
+    animation: slideToLeft 0.75s linear forwards;
+}
